@@ -1,0 +1,57 @@
+
+	Libcpak - A C programmers' army knife
+
+	IN BRIEF
+
+	Libcpak is a convenience library for C programmers. It is meant as a 
+	handy tool set to free developers from reimplementing often needed tasks
+	such as handling linked lists and trees, performing operations on queues
+	and stacks, checking for system calls' return status, processing command
+        line options, managing dynamic arrays and matrixes and so on.  
+
+	Warning:
+
+	As of this writing Libcpak is a work on progress in its early stage
+	of development.  Be prepared for bugs and incomplete features.
+
+	THE WHOLE HISTORY
+
+	CPAK stands for "C Programmers' Army Kife". Libcpak is intended as 
+	collection o simple to advanced resources for developers so that one
+	does not need to reimplement often needed functions and data structures.
+
+	Libcpak is not a replacement for GNU Glib
+
+	And the history begins more or less like this:
+
+	Once upon a time there was a small library...  (to be continued).
+
+
+	QUICK REFERENCE
+	
+	* Libcpak if free software; see COPYING for license information.
+
+	* Building and installing: refer to INSTALL. 
+	  Quick start: ./configure && make && make install. 
+
+	* Libcpak documentation is ongoing. For now, you may refer directly
+	  to the source code.
+	
+	DEVELOPERS
+
+	* Refer to file DEVELOPERS.
+
+	SOME NOTES
+
+	Libcpak is not a replacement for GLib (www.gtk.org). Both have
+	similar purposes but different design principles and feature set.
+	
+	Libpack is built on top of libc and nothing else (no other library);
+
+	Libcapk is strictly compliant to standard C (C89) and POSIX.
+
+
+
+
+
+	
