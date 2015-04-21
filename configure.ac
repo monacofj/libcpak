@@ -47,8 +47,8 @@ dnl CC="$PTHREAD_CC"
 
 dnl Stick to Ansi-C89/ISO-C90 + Posix
 
-CPAK_CPPFLAGS="-std=c89 -D_POSIX_SOURCE -Wall -Werror --pedantic-errors"
-CPAK_CFLAGS="-std=c89 -D_POSIX_SOURCE -Wall -Werror --pedantic-errors" 
+CPAK_CPPFLAGS="--ansi -Wall -Werror --pedantic-errors"
+CPAK_CFLAGS="-D_POSIX_C_SOURCE=200112L" 
 
 CPPFLAGS="$CPAK_CPPFLAGS $CPPFLAGS"      dnl Was CPPFLAGS
 CFLAGS="$CPAK_CFLAGS $CFLAGS"   	        dnl Was CFLAGS
