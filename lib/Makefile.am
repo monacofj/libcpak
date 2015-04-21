@@ -37,20 +37,19 @@ CPAK_VERSIONING=0:0:0
 
 # Compiler flags
 
-AM_CFLAGS =  @CPAK_CFLAGS@ -DCPAK_REPLACED="\"@CPAK_REPLACE@\""
-AM_CPPFLAGS = @CPAK_CPPFLAGS@ -include ${top_srcdir}/replace/replace.h 
+AM_CFLAGS =  @CPAK_CFLAGS@ 
+AM_CPPFLAGS = @CPAK_CPPFLAGS@ 
 
 # The libcpak library.
 
 lib_LTLIBRARIES = libcpak.la				# Target
 libcpak_la_SOURCES = core.c  sysfun.c messages.c	# Sources
 libcpak_la_LDFLAGS = -version-info $(CPAK_VERSIONING) 	# Linker flags
-libcpak_la_LIBADD = @LIBOBJS@				# Replacement functions
+libcpak_la_LIBADD = @LIBOBJS@				# Replacement functions (if any)
 
 # The licpak headers.
 
 nobase_include_HEADERS = libcpak.h libcpak/core.h libcpak/sysfun.h libcpak/messages.h
-#nobase_include_HEADERS = libcpak.h libcpak/*.h
 
 
 # Clean custom garbage

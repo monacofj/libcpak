@@ -55,15 +55,6 @@ CFLAGS="$CPAK_CFLAGS $CFLAGS"   	        dnl Was CFLAGS
 AC_SUBST([CPAK_CPPFLAGS])
 AC_SUBST([CPAK_CFLAGS])		    
 
-dnl Function replacements for ANSI+Posix compliance.
-dnl Ad hoc way (we might use Gnulib instead)
-
-AC_CONFIG_LIBOBJ_DIR([replace])
-AC_CHECK_DECLS([strdup],[],[AC_LIBOBJ(strdup)])
-
-CPAK_REPLACE=${LIBOBJS/.o/}
-AC_SUBST([CPAK_REPLACE])
-
 dnl Check for doxygen 
 
 dnl AC_CHECK_PROGS([DOXYGEN], [doxygen])

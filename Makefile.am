@@ -22,7 +22,7 @@
 SUBDIRS = lib src test 
 ACLOCAL_AMFLAGS = -I m4
 
-EXTRA_DIST = $(top_srcdir)/replace/*.[ch]
+EXTRA_DIST = 
 
 # Clean up custom garbage
 
